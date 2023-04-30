@@ -4,26 +4,24 @@ def fabonacci1(n):
     elif n == 2:
         return 1
     else:
-        return fabonacci1(n-1)+fabonacci1(n-2)
+        return fabonacci1(n - 1) + fabonacci1(n - 2)
+
 
 def fabonacci2(n):
     result1 = 0
     result2 = 1
-    print(0,end=', ')
-    print(1,end=', ')
-    for i in range(n,2,-1):
+    print(0, end=', ')
+    print(1, end=', ')
+    for i in range(n, 2, -1):
         if result1 < result2:
             result1 += result2
-            print(result1,end=', ')
+            print(result1, end=', ')
         else:
             result2 += result1
-            print(result2,end=', ')
+            print(result2, end=', ')
 
-    if result1 > result2:
-        return result1
-    else:
-        return result2
+    return result1 if result1 > result2 else result2
 
 
-#print(fabonacci1(10))
-print(fabonacci2(5555) % 5)
+print(fabonacci1(10))
+print(fabonacci2(5555))

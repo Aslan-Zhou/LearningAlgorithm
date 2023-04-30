@@ -14,14 +14,16 @@ def func(nums):
             fast += 1
 
         print("[", end='')
-        for i in range(0,slow + 1):
-            print(nums[i], end=',')
+        print(nums[0], end='')
+        for i in range(1, slow + 1):
+            print(',', nums[i], end='')
         print("]  {}".format(slow + 1))
         return slow + 1
 
+
 a = []
-b = [1,2,3,4,5]
-c = [7,4,9,1,4,2,4]
+b = [1, 2, 3, 4, 5]
+c = [7, 4, 9, 1, 4, 2, 4]
 aa = func(a)
 bb = func(b)
 cc = func(c)

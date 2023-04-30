@@ -1,6 +1,5 @@
 def selectSort(nums):
-
-    for i in range(0,len(nums)):
+    for i in range(0, len(nums)):
         minNum = nums[i]
         minNumIndex = i
         for j in range(i, len(nums)):
@@ -14,5 +13,6 @@ def selectSort(nums):
 
     return nums
 
-nums = [1,3,5,7,9,2,4,6,8,10,0]
+
+nums = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 0]
 print(selectSort(nums))

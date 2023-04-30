@@ -1,4 +1,4 @@
-def func1(n,m):
+def func1(n, m):
     if n == 0 or m == 0:
         return 0
     else:
@@ -11,11 +11,14 @@ def func1(n,m):
             return m
         else:
             return n
-def func2(n,m):
+
+
+def func2(n, m):
     if n == 0 or m == 0:
         return 0
     else:
         pass
 
-print(func1(1112,695))
-print(func2(1112,695))
+
+print(func1(1112, 695))
+print(func2(1112, 695))

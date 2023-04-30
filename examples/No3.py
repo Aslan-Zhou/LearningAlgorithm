@@ -7,9 +7,9 @@ def linearSearch(nums, value):
         if nums[i] == value:
             return i
 
-    if i >= len(nums)-1:
-        return -1
+    if i >= len(nums) - 1:
+        return None
 
 
-nums = [1,3,5,2,4]
+nums = [1, 3, 5, 2, 4]
 print(linearSearch(nums, 2))
